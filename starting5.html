@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandscapers Africa - Our Team</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e88e5;
+            --dark-blue: #0d47a1;
+            --light-blue: #bbdefb;
+            --white: #ffffff;
+            --black: #212121;
+        }
+        
+        body {
+    background: linear-gradient(#1e88e5, #8c8a8a),
+    url("bsgrad.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+        }
+
+        .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(13, 71, 161, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+        
+        .footer {
+  background-color: var(--dark-blue);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 60px 0 30px;
+  font-size: 0.95rem;
+}
+
+.footer h5 {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-blue);
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--primary-blue);
+  transform: translateY(-4px);
+}
+
+
+
+        .team-section {
+            
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--white);
+        }
+        
+        .team-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .team-img-placeholder {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .team-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-card:hover .team-img-placeholder img {
+            transform: scale(1.05);
+        }
+        
+        .team-card h3 {
+            color: var(--dark-blue);
+            font-weight: 700;
+            margin-top: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .team-card p {
+            color: var(--black);
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+        
+        .team-card .social-links {
+            background: var(--primary-blue);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .team-card .social-links a {
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .team-card .social-links a:hover {
+            transform: translateY(-3px);
+            color: var(--light-blue);
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .team-img-placeholder {
+                height: 200px;
+            }
+        }
+    </style>
+      <link rel="icon" type="image/png" href="bslogo.JPG">
+
+</head>
+<body>
+
+
+
+  <!-- Header Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+        <img src="bslogo.JPG" alt="Brandscapers Africa Logo" height="40" class="me-2">
+        Brandscapers Africa
+      </a>
+    <!--  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#campaigns">Campaigns</a></li>
+          <li class="nav-item"><a class="nav-link" href="#thought-leadership">Thought Leadership</a></li>
+        </ul>
+      </div> --> 
+    </div>
+  </nav>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title text-center">The Starting 5</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bseman.JPG" alt="Emmanuel Bonoko">
+                        </div>
+                        <h3>Emmanuel Bonoko</h3>
+                        <p>Founding Director</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsmvelo.jpg" alt="Mvelo Ndlovu">
+                        </div>
+                        <h3>Mvelo Ndlovu</h3>
+                        <p>Consumer Behavior Researcher</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsrobert.jpg" alt="Robert Selokela">
+                        </div>
+                        <h3>Robert Selokela</h3>
+                        <p>Project Manager</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsnorma.jpg" alt="Norma Nxumalo">
+                        </div>
+                        <h3>Norma Nxumalo</h3>
+                        <p>Office Manager</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 5 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsmahlatse.jpg" alt="Mahlatse Mapholi">
+                        </div>
+                        <h3>Mahlatse Mapholi</h3>
+                        <p>PK Manager</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 6 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsneliswa.jpg" alt="Neliswa Ngiba">
+                        </div>
+                        <h3>Neliswa Ngiba</h3>
+                        <p>Head Of Sales And Strategy</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 7 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsmcd.JPG" alt="Macdonald Kganyago">
+                        </div>
+                        <h3>Macdonald Kganyago</h3>
+                        <p>Head Of Creatives</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 8 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsraymond.jpg" alt="Raymond Masemole">
+                        </div>
+                        <h3>Raymond Masemole</h3>
+                        <p>Stakeholder Manager</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 9 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-img-placeholder">
+                            <img src="bsking.jpg" alt="King Mazibuko">
+                        </div>
+                        <h3>King Mazibuko</h3>
+                        <p>Head Of Logistics</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Logo & Description -->
+      <div class="col-md-4 mb-4">
+        <img src="bslogo.JPG" alt="Brandscapers Africa Logo" class="footer-logo mb-3" style="height: 60px;">
+        <p>
+          Brandscapers Africa is a culture-first strategy and impact agency led by a dynamic team of brand creators, connectors, and campaigners across the continent.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-white mb-3">Explore</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">About</a></li>
+          <li><a href="starting5.html">Team</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="campaigns.html">Campaigns</a></li>
+          <li><a href="thoughtleadership.html">Thought Leadership</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-white mb-3">Get in Touch</h5>
+        <p><i class="fas fa-envelope me-2"></i> info@brandscapers.africa</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Johannesburg, South Africa</p>
+        <div class="social-links mt-3">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-25">
+    <div class="text-center small text-muted pt-2">
+      &copy; 2023 Brandscapers Africa. Proudly built by storytellers and strategists.
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

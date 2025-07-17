@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandscapers Africa - Thought Leadership</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e88e5;
+            --dark-blue: #0d47a1;
+            --light-blue: #bbdefb;
+            --white: #ffffff;
+            --black: #212121;
+            --gold: #FFD700;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(#1e88e5, #8c8a8a),
+    url("bsgrad.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+        }
+
+        .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(13, 71, 161, 0.95);
+  backdrop-filter: blur(10px);
+}
+        
+.footer {
+  background-color: var(--dark-blue);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 60px 0 30px;
+  font-size: 0.95rem;
+}
+
+.footer h5 {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-blue);
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--primary-blue);
+  transform: translateY(-4px);
+}
+
+        .thought-leadership-section {
+            
+        
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 0;
+            position: relative;
+            color: var(--white);
+            
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+        }
+        
+        .thought-leader-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--gold);
+        }
+        
+        .thought-leader-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .leader-img-placeholder {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .leader-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .thought-leader-card:hover .leader-img-placeholder img {
+            transform: scale(1.05);
+        }
+        
+        .thought-leader-card h3 {
+            color: var(--dark-blue);
+            font-weight: 700;
+            margin: 20px 0 5px;
+            font-size: 1.5rem;
+            padding: 0 20px;
+        }
+        
+        .position {
+            color: var(--primary-blue);
+            font-weight: 600;
+            padding: 0 20px;
+            margin-bottom: 15px;
+        }
+        
+        .leader-quote {
+            background: var(--light-blue);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .leader-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-blue);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1;
+        }
+        
+        .leader-quote p {
+            color: var(--dark-blue);
+            font-style: italic;
+            font-weight: 500;
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .leader-img-placeholder {
+                height: 250px;
+            }
+            
+            .thought-leader-card {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+      <link rel="icon" type="image/png" href="bslogo.JPG">
+
+</head>
+<body>
+
+   <!-- Header Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+        <img src="bslogo.JPG" alt="Brandscapers Africa Logo" height="40" class="me-2">
+        Brandscapers Africa
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!--  <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#campaigns">Campaigns</a></li>
+          <li class="nav-item"><a class="nav-link" href="#thought-leadership">Thought Leadership</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </nav>
+    <!-- Thought Leadership Section -->
+    <section id="thought-leadership" class="thought-leadership-section">
+        <div class="container">
+            <h2 class="section-title text-center">Thought Leadership Profiling</h2>
+            <div class="row">
+                <!-- Leader 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="thought-leader-card">
+                        <div class="leader-img-placeholder">
+                            <img src="bsph.JPG" alt="Phuti Mahanyele-Dabengwa">
+                        </div>
+                        <h3>Phuti Mahanyele-Dabengwa</h3>
+                        <p class="position">CEO Of Naspers</p>
+                        <div class="leader-quote">
+                            <p>"THE DISRUPTORS IN BUSINESS AND EDUCATION ADMANT ABOUT CHANGE"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Leader 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="thought-leader-card">
+                        <div class="leader-img-placeholder">
+                            <img src="bsbonangi.JPG" alt="Bonang Mohale" style="width: 100%; height: 90%; object-fit: cover;">
+                        </div>
+                        <h3>Bonang Mohale</h3>
+                        <p class="position">Former CEO Of Shell SA</p>
+                        <div class="leader-quote">
+                            <p>"DIVERSITY, EQUITY & INCLUSION # DOING BETTER BUSINESS"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Leader 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="thought-leader-card">
+                        <div class="leader-img-placeholder">
+                            <img src="bsmxo.JPG" alt="Mxolisi Mgojo" >
+                        </div>
+                        <h3>Mxolisi Mgojo</h3>
+                        <p class="position">Former CEO Of Exxaro Resources</p>
+                        <div class="leader-quote">
+                            <p>"The company intends to make the most its coal but is aiming for carbon neutral by 2050"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Logo & Description -->
+      <div class="col-md-4 mb-4">
+        <img src="bslogo.JPG" alt="Brandscapers Africa Logo" class="footer-logo mb-3" style="height: 60px;">
+        <p>
+          Brandscapers Africa is a culture-first strategy and impact agency led by a dynamic team of brand creators, connectors, and campaigners across the continent.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-white mb-3">Explore</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">About</a></li>
+          <li><a href="starting5.html">Team</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="campaigns.html">Campaigns</a></li>
+          <li><a href="thoughtleadership.html">Thought Leadership</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase text-white mb-3">Get in Touch</h5>
+        <p><i class="fas fa-envelope me-2"></i> info@brandscapers.africa</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Johannesburg, South Africa</p>
+        <div class="social-links mt-3">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-25">
+    <div class="text-center small text-muted pt-2">
+      &copy; 2023 Brandscapers Africa. Proudly built by storytellers and strategists.
+    </div>
+  </div>
+</footer>
+
+  
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
